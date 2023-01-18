@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network Manager Setup on AWS Networking and Content Delivery</title>
+    <link>/9-transitgatewaynetworkmanager/9.1-networkmanagersetup/</link>
+    <description>Recent content in Network Manager Setup on AWS Networking and Content Delivery</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/9-transitgatewaynetworkmanager/9.1-networkmanagersetup/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
