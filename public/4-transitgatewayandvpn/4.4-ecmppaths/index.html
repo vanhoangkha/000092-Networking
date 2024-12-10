@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Additional ECMP Paths :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -344,7 +344,7 @@
   
     
     <li data-nav-id="/4-transitgatewayandvpn/4.4-ecmppaths/" title="Additional ECMP Paths" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -985,7 +985,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1084,7 +1084,7 @@
 	<h4 id="additional-ecmp-paths">Additional ECMP Paths</h4>
 <p>Equal-cost multi-path routing (ECMP) is a routing strategy where packet forwarding to a single destination can occur over multiple best paths with equal routing priority. Multi-path routing can be used in conjunction with most routing protocols because it is a per-hop local decision made independently at each router. It can substantially increase bandwidth by load-balancing traffic over multiple paths; however, there may be significant problems in deploying it in practice.</p>
 <p>Bandwidth scaling and High Availability are built into the Transit Gateway inherently as well as via multiple Availability Zone (AZ) attachments to our VPCs. However; for connectivity back to our Datacenter, we have some things to consider. In the real world, we would create another Customer Gateway on a totally separated physical device. Ideally, this is physically as fault-isolated from the first Customer Gateway as we can make it (think, across the room or even in another communications room with separate connectivity and power if we have it). But in order to distribute load across both Customer Gateways within the datacenter you would typically use another tier of routers (shown below as a core router) to balance the traffic. For our demo purposes, lets build it on the same Cisco CSR we have in our simulated Datacenter so we can see more ECMP in action.</p>
-<p><img src="/images/vpn-ecmp.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/vpn-ecmp.png?featherlight=false&width=70pc"></p>
 <ol>
 <li>
 <p>Access to <strong>Transit Gateway attachment</strong></p>
@@ -1093,7 +1093,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>
 <p>Make configuration</p>
@@ -1105,7 +1105,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>
 <p>Configure the <strong>Tunnel</strong></p>
@@ -1119,15 +1119,15 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Wait about 7 minutes, finish creating <strong>VPN-ECMP</strong> transit gateway attachment.</li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Check <strong>VPN-ECMP connection</strong></li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Make access to <strong>Transit gateway route tables</strong></li>
 </ol>
@@ -1136,18 +1136,18 @@
 <li>Select <strong>Associations</strong></li>
 <li>Select <strong>Create association</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0006.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>In the <strong>Create association</strong> interface</li>
 </ol>
 <ul>
 <li>Select <strong>Create association</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Complete creation <strong>association</strong></li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0008.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Select <strong>Green Route Table</strong></li>
 </ol>
@@ -1155,18 +1155,18 @@
 <li>Select <strong>Propagations</strong></li>
 <li>Select <strong>Create propagation</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0009.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0009.png?featherlight=false&width=90pc"></p>
 <ol start="10">
 <li>In the <strong>Propagation</strong> interface</li>
 </ol>
 <ul>
 <li>Select <strong>Create propagation</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/00010.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00010.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>Finish creating <strong>Propagation</strong>. Repeat the <strong>Progapation</strong> creation step for <strong>Red Route Table and Blue Route Tables.</strong></li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/00011.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00011.png?featherlight=false&width=90pc"></p>
 <ol start="12">
 <li>Access to <strong>VPN connections</strong></li>
 </ol>
@@ -1176,12 +1176,12 @@
 <li>Use <strong>Outside IP addresses</strong> for the next step to configure.</li>
 <li>Currently not configured so status <strong>Down</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/00012.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00012.png?featherlight=false&width=90pc"></p>
 <ol start="13">
 <li>Access the <strong>AWS Cloud9</strong> interface, perform the configuration by running the command to create the file <strong>my2ndcsrconfig.txt</strong></li>
 </ol>
 <pre tabindex="0"><code>./create2ndcsr.sh publicip1 publicip2 my2ndcsrconfig.txt
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00013.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00013.png?featherlight=false&width=90pc"></p>
 <ol start="14">
 <li>Make SSH connection from <strong>Output</strong> of <strong>CloudFormation</strong></li>
 </ol>
@@ -1192,27 +1192,27 @@
 </code></pre><ul>
 <li>Then copy the contents of the file <strong>my2ndcsrconfig.txt</strong> and configure.</li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/00014.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00014.png?featherlight=false&width=90pc"></p>
 <ol start="15">
 <li>We check to see more <strong>Tunnel3 and Tunnel4</strong></li>
 </ol>
 <pre tabindex="0"><code>sh ip int br
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00015.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00015.png?featherlight=false&width=90pc"></p>
 <ol start="16">
 <li>Make sure we&rsquo;re seeing the routes on the Cisco CSR. First we can see what BGP is seeing: <strong>show ip bgp summary</strong>. The most important thing to look at is State / PfxRcd (Received Prefixes). If this is Active or Inactive (probably a wrong neighbor statement: IP address, AS number) then there is a configuration issue. What we want to see is a number. In fact, if everything is set up correctly, we should see 4 for each neighbor:</li>
 </ol>
 <pre tabindex="0"><code>sh ip bgp summ
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00016.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00016.png?featherlight=false&width=90pc"></p>
 <ol start="17">
 <li>To verify the setting of <strong>Equal Cost Multipathing (ECMP)</strong> use the command <strong>sh ip ro</strong>. The tunnels are all up.</li>
 </ol>
 <pre tabindex="0"><code>sh ip ro
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00017.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00017.png?featherlight=false&width=90pc"></p>
 <ol start="18">
 <li>Alternatively, you can use show ip route bgp as we did before to see only BGP routes).</li>
 </ol>
 <pre tabindex="0"><code>show ip route bgp
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00018.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00018.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1727,19 +1727,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

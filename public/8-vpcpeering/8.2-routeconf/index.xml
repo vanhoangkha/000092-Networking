@@ -4,6 +4,8 @@
     <title>Routing Configuration on AWS Networking and Content Delivery</title>
     <link>/8-vpcpeering/8.2-routeconf/</link>
     <description>Recent content in Routing Configuration on AWS Networking and Content Delivery</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/8-vpcpeering/8.2-routeconf/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/8-vpcpeering/8.2-routeconf/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

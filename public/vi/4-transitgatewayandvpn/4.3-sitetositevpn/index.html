@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Cài đặt Site-to-site VPN :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -316,7 +316,7 @@
   
     
     <li data-nav-id="/vi/4-transitgatewayandvpn/4.3-sitetositevpn/" title="Cài đặt Site-to-site VPN" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -1013,7 +1013,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1123,7 +1123,7 @@ software appliance.</li>
 <ol>
 <li>Truy cập vào giao diện <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:">VPC</a></li>
 </ol>
-<p><img src="/images/Lab-1/9/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Trong giao diện <strong>VPC</strong></li>
 </ol>
@@ -1131,7 +1131,7 @@ software appliance.</li>
 <li>Chọn <strong>Transit gateway attachments</strong></li>
 <li>Chọn <strong>Crate transit gateway attachment</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Thực hiện cấu hình</li>
 </ol>
@@ -1142,7 +1142,7 @@ software appliance.</li>
 <li>Chọn <strong>Customer Gateway ID (CGW)</strong></li>
 <li>Đối với <strong>Routing options</strong>, chọn <strong>Dynamic(requires BGP)</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Thực hiện cấu hình các <strong>Tunnel</strong></li>
 </ol>
@@ -1153,11 +1153,11 @@ software appliance.</li>
 <li><strong>Pre-Shared Key for Tunnel 2</strong> sử dụng <strong>awsamazon</strong></li>
 <li>Chọn <strong>Create transit gateway attachment</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Đợi khoảng 7 phút, hoàn thành tạo <strong>Transit gateway attachments</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#TransitGatewayRouteTables:">Transit gateway route tables</a></li>
 </ol>
@@ -1165,15 +1165,15 @@ software appliance.</li>
 <li>Chọn <strong>Associations</strong></li>
 <li>Chọn <strong>Create association</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0006.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Trong giao diện <strong>Create association</strong>, Chọn <strong>Create association</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Đã hoàn thành tạo <strong>Association</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0008.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Cũng trong giao diện <strong>Transit gateway route table</strong></li>
 </ol>
@@ -1182,22 +1182,22 @@ software appliance.</li>
 <li>Chọn <strong>Propagations</strong></li>
 <li>Chọn <strong>Create propagations</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0009.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0009.png?featherlight=false&width=90pc"></p>
 <ol start="10">
 <li>Trong giao diện <strong>Create propagation</strong></li>
 </ol>
 <ul>
 <li>Chọn <strong>Create propagation</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/00010.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00010.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>Hoàn thành tạo <strong>propagation</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/00011.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00011.png?featherlight=false&width=90pc"></p>
 <ol start="12">
 <li>Thực hiện tạo <strong>Propagation</strong> tương tự đối với <strong>Red Route Table và Blue Route Table.</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/00012.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00012.png?featherlight=false&width=90pc"></p>
 <ol start="13">
 <li>Quay lại giao diện <strong>AWS Cloud9</strong></li>
 </ol>
@@ -1205,7 +1205,7 @@ software appliance.</li>
 <li>Chúng ta thực hiện cấu hình <strong>VPN</strong> tạo file cấu hình bằng lệnh sau:</li>
 </ul>
 <pre tabindex="0"><code>./createcsr.sh publicip1 publicip2 mycsrconfig.txt
-</code></pre><p><img src="/images/Lab-1/9/00013.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00013.png?featherlight=false&width=90pc"></p>
 <ol start="14">
 <li>Chúng ta truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#VpnConnections:">Site-to-Site VPN Connections</a></li>
 </ol>
@@ -1215,16 +1215,16 @@ software appliance.</li>
 <li>Vì chưa cấu hình nên trạng thái <strong>Down</strong></li>
 <li>Chúng ta sử dụng 2 địa chỉ IP của <strong>Outside IP address</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/00014.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00014.png?featherlight=false&width=90pc"></p>
 <ol start="15">
 <li>Quay lại giao diện <strong>Cloud9</strong> thay thế địa chỉ IP Public và chạy lệnh tạo file <strong>mycsrconfig.txt</strong></li>
 </ol>
 <pre tabindex="0"><code>./createcsr.sh publicip1 publicip2 mycsrconfig.txt
-</code></pre><p><img src="/images/Lab-1/9/00015.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00015.png?featherlight=false&width=90pc"></p>
 <ol start="16">
 <li>Chúng ta mở file <strong>mycsrconfig.txt</strong> xem nội dung cấu hình VPN.</li>
 </ol>
-<p><img src="/images/Lab-1/9/00016.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00016.png?featherlight=false&width=90pc"></p>
 <ol start="17">
 <li>Sử dụng lệnh để bắt đầu cấu hình</li>
 </ol>
@@ -1232,21 +1232,21 @@ software appliance.</li>
 </code></pre><ul>
 <li>Sau đó, sao chép tất cả lệnh trong file  <strong>mycsrconfig.txt</strong> dán vào cấu hình.</li>
 </ul>
-<p><img src="/images/Lab-1/9/00017.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00017.png?featherlight=false&width=90pc"></p>
 <ol start="18">
 <li>Sau khi cấu hình, nhập <strong>exit</strong> để thoát.</li>
 </ol>
-<p><img src="/images/Lab-1/9/00018.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00018.png?featherlight=false&width=90pc"></p>
 <ol start="19">
 <li>Để kiểm tra cấu hình thành công ta thực hiện lệnh</li>
 </ol>
 <pre tabindex="0"><code>sh ip int br
-</code></pre><p><img src="/images/Lab-1/9/00019.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00019.png?featherlight=false&width=90pc"></p>
 <ol start="20">
 <li>Hãy đảm bảo rằng chúng tôi đang nhìn thấy các tuyến đường trên Cisco CSR. đầu tiên chúng ta có thể xem BGP đang thấy gì: <strong>show ip bgp summary</strong>. Điều quan trọng nhất cần xem là State / PfxRcd (Các tiền tố đã nhận). Nếu điều này ở trạng thái Hoạt động hoặc Không hoạt động (có thể là một neighbor statement sai: địa chỉ IP, số AS) thì có vấn đề về cấu hình. Những gì chúng ta muốn thấy là một con số. Trên thực tế, nếu mọi thứ được thiết lập chính xác, chúng ta sẽ thấy 4 cho mỗi neighbor:</li>
 </ol>
 <pre tabindex="0"><code>show ip bgp summary
-</code></pre><p><img src="/images/Lab-1/9/00020.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00020.png?featherlight=false&width=90pc"></p>
 <ol start="21">
 <li>Lưu ý rằng chỉ có một next-hop address cho mỗi CIDR của VPC, mặc dù có 2 tunnel tại chỗ. Đây là kết quả của việc không sử dụng ECMP theo mặc định. Chúng ta có thể khắc phục điều này bằng cách cho phép ECMP trong bộ định tuyến CSR của Cisco. Quay lại chế độ cấu hình, chúng ta sẽ đặt đường dẫn tối đa thành 8 trong bộ định tuyến BGP của chúng ta. Chỉ cần thực hiện các lệnh sau:</li>
 </ol>
@@ -1254,16 +1254,16 @@ software appliance.</li>
 address-family ipv4
 maximum-paths 8
 end
-</code></pre><p><img src="/images/Lab-1/9/00021.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00021.png?featherlight=false&width=90pc"></p>
 <ol start="22">
 <li>Thực hiện lệnh <strong>sh ip route bgp</strong> lần nữa. Chỉ để xác minh các tuyến đường đó đến từ đâu, chúng ta có thể xem qua Green Route Table. Lưu ý: hãy nhớ rằng nó nằm dưới dịch vụ VPC và Transit Gateway Route Tables ở cuối menu bên trái. Nên có 5 tuyến đường được liệt kê.</li>
 </ol>
 <pre tabindex="0"><code>sh ip route bgp
-</code></pre><p><img src="/images/Lab-1/9/00022.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00022.png?featherlight=false&width=90pc"></p>
 <ol start="23">
 <li>Như bạn có thể đoán, tuyến 10.4.0.0/16 là VPC CIDR cho VPC DataCenter mà CSR của Cisco hoạt động. Cisco CSR đang quảng cáo tuyến đường này tới Transit Gateway. Bạn thực sự có thể kiểm tra điều đó bằng cách kiểm tra cấu hình bộ định tuyến với <strong>sh run</strong> và cuộn xuống phần BGP:</li>
 </ol>
-<p><img src="/images/Lab-1/9/00023.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00023.png?featherlight=false&width=90pc"></p>
 <ol start="24">
 <li>Truy cập vào <strong>VPN Connections</strong></li>
 </ol>
@@ -1272,7 +1272,7 @@ end
 <li>Chọn  <strong>Tunnel details</strong></li>
 <li>Hai tunnel đã chuyển trạng thái <strong>UP</strong></li>
 </ul>
-<p><img src="/images/Lab-1/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/0001.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1803,19 +1803,19 @@ end
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

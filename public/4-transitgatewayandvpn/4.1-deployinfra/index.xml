@@ -4,6 +4,8 @@
     <title>Datacenter Router and Transit Gateway Deployment on AWS Networking and Content Delivery</title>
     <link>/4-transitgatewayandvpn/4.1-deployinfra/</link>
     <description>Recent content in Datacenter Router and Transit Gateway Deployment on AWS Networking and Content Delivery</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/4-transitgatewayandvpn/4.1-deployinfra/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/4-transitgatewayandvpn/4.1-deployinfra/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

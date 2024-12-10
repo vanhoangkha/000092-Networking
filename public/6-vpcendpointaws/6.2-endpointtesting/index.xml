@@ -4,6 +4,8 @@
     <title>NP2 Endpoint Testing on AWS Networking and Content Delivery</title>
     <link>/6-vpcendpointaws/6.2-endpointtesting/</link>
     <description>Recent content in NP2 Endpoint Testing on AWS Networking and Content Delivery</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/6-vpcendpointaws/6.2-endpointtesting/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="/6-vpcendpointaws/6.2-endpointtesting/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

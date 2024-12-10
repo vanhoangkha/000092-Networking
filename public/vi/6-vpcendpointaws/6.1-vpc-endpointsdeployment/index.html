@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Triển khai VPC Endpoint :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -532,7 +532,7 @@
   
     
     <li data-nav-id="/vi/6-vpcendpointaws/6.1-vpc-endpointsdeployment/" title="Triển khai VPC Endpoint" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -1013,7 +1013,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1120,34 +1120,34 @@
 <li>Chọn <strong>NP2 Instance</strong></li>
 <li>Chọn <strong>Start session</strong></li>
 </ul>
-<p><img src="/images/Lab-VPC-Endpoint-AWS/1/0001.png?featherlight=false&amp;width=90pc" alt="VPC Endpoint"></p>
+<p><img alt="VPC Endpoint" src="/images/Lab-VPC-Endpoint-AWS/1/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Trong giao diện <strong>Session</strong></li>
 </ol>
 <p>Sử dụng lệnh sau:</p>
 <pre tabindex="0"><code>dig kms.your_region.amazonaws.com
-</code></pre><p><img src="/images/Lab-VPC-Endpoint-AWS/1/0002.png?featherlight=false&amp;width=90pc" alt="VPC Endpoint"></p>
+</code></pre><p><img alt="VPC Endpoint" src="/images/Lab-VPC-Endpoint-AWS/1/0002.png?featherlight=false&width=90pc"></p>
 <p>Như bạn có thể đoán, trước khi VPC Endpoint được cấp phép, giao tiếp hướng tới dịch vụ KMS từ NP2 instance sẽ truyền qua DCS1 NAT Gateway (cũng sẽ tận dụng nternet Gateway bên trong VPC). Đây là kết quả trực tiếp của việc KMS phân giải public ip addresses. Đây là luồng lưu lượng truy cập trông như thế này:</p>
-<p><img src="/images/kms-noendpoint.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/kms-noendpoint.png?featherlight=false&width=70pc"></p>
 <p>Nhưng bây giờ chúng tôi muốn quên việc quản lý kết nối công cộng và sử dụng  KMS VPC Endpoint trung tâm này bất cứ khi nào có thể. Để làm được điều đó, chúng ta sẽ cung cấp:</p>
 <ul>
 <li>KMS VPC Endpoint trong DCS1 VPC</li>
 <li>Route 53 Private Hosted Zone được liên kết với NP2 VPC để mọi truy vấn DNS cho dịch vụ KMS đều được chuyển đến VPC Endpoint trong DCS1 VPC.</li>
 </ul>
-<p><img src="/images/kms-endpoint.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/kms-endpoint.png?featherlight=false&width=70pc"></p>
 <h4 id="vpc-endpoints---deployment">VPC Endpoints - Deployment</h4>
 <ol>
-<li>Truy cập vào giao diện tạo <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=tgw-kms&amp;templateURL=https://ee-assets-prod-us-east-1.s3.amazonaws.com/modules/c1bed8fa7fe74c40bcf1d5397530fdcb/v1/IntermediateLab.5.tgw-endpoints.yaml&amp;param_ParentStack=tgw">stack CloudFormation</a></li>
+<li>Truy cập vào giao diện tạo <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=tgw-kms&templateURL=https://ee-assets-prod-us-east-1.s3.amazonaws.com/modules/c1bed8fa7fe74c40bcf1d5397530fdcb/v1/IntermediateLab.5.tgw-endpoints.yaml&param_ParentStack=tgw">stack CloudFormation</a></li>
 </ol>
 <ul>
 <li>Chọn tất cả mặc định</li>
 <li>Chọn <strong>Create stack</strong></li>
 </ul>
-<p><img src="/images/Lab-VPC-Endpoint-AWS/1/0003.png?featherlight=false&amp;width=90pc" alt="VPC Endpoint"></p>
+<p><img alt="VPC Endpoint" src="/images/Lab-VPC-Endpoint-AWS/1/0003.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Đợi 20 phút sau, hoàn thành tạo stack.</li>
 </ol>
-<p><img src="/images/Lab-VPC-Endpoint-AWS/1/0004.png?featherlight=false&amp;width=90pc" alt="VPC Endpoint"></p>
+<p><img alt="VPC Endpoint" src="/images/Lab-VPC-Endpoint-AWS/1/0004.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1675,19 +1675,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

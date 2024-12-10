@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Datacenter Router and Transit Gateway Deployment :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -260,7 +260,7 @@
   
     
     <li data-nav-id="/4-transitgatewayandvpn/4.1-deployinfra/" title="Datacenter Router and Transit Gateway Deployment" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -985,7 +985,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1097,12 +1097,12 @@
 <p><strong>Propagations</strong> — A VPC or VPN connection can dynamically propagate routes to a Transit Gateway route table. With a VPC, you must create static routes to send traffic to the Transit Gateway. With a VPN connection, routes are propagated from the Transit Gateway to your on-premises router using Border Gateway Protocol (BGP).</p>
 </li>
 </ul>
-<p><img src="/images/hybrid-tgw-diagram.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/hybrid-tgw-diagram.png?featherlight=false&width=70pc"></p>
 <h4 id="datacenter-router-and-transit-gateway-deployment">Datacenter Router and Transit Gateway Deployment</h4>
 <p>Using a predefined CloudFormation template we will deploy a Cisco Router (Cisco CSR) into the Datacenter VPC simulating our on-premise VPN router. In addition, a Transit Gateway will be deployed with a couple of Transit Gateway route tables.</p>
 <ol>
 <li>
-<p>Access the creation interface <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=tgw-csr&amp;templateURL=https://ee-assets-prod-us-east-1.s3.amazonaws.com/modules/c1bed8fa7fe74c40bcf1d5397530fdcb/v1/IntermediateLab.2.tgw-csr.yaml&amp;param_AvailabilityZoneA=us-east-1a&amp;param_AvailabilityZoneB=us-east-1b&amp;param_ParentStack=tgw">Stack CloudFormation</a></p>
+<p>Access the creation interface <a href="https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=tgw-csr&templateURL=https://ee-assets-prod-us-east-1.s3.amazonaws.com/modules/c1bed8fa7fe74c40bcf1d5397530fdcb/v1/IntermediateLab.2.tgw-csr.yaml&param_AvailabilityZoneA=us-east-1a&param_AvailabilityZoneB=us-east-1b&param_ParentStack=tgw">Stack CloudFormation</a></p>
 <ul>
 <li>Perform configuration, enter the stack name.</li>
 <li>Select <strong>Key Pair</strong> created in the preparation step</li>
@@ -1112,19 +1112,19 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/7/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/7/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Wait about 20 minutes, you have finished deploying the resource</li>
 </ol>
-<p><img src="/images/Lab-1/7/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/7/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>In <strong>Output</strong> of Stack CloudFormation we will see <strong>Key-Value</strong> which we will use to SSH into the Data Center.</li>
 </ol>
-<p><img src="/images/Lab-1/7/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/7/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Go to <strong>EC2</strong> to see deployed instances.</li>
 </ol>
-<p><img src="/images/Lab-1/7/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/7/0004.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1636,19 +1636,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

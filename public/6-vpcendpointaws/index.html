@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>VPC Endpoints for AWS Services :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -473,7 +473,7 @@
   
     
     <li data-nav-id="/6-vpcendpointaws/" title="VPC Endpoints for AWS Services" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -985,7 +985,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1079,7 +1079,7 @@
 <p>We can use VPC endpoints if we require communication between resources within our VPCs and supported AWS services (Kinesis, Glue, KMS, etc.) without the need of crossing an Internet Gateway, NAT Gateway, VPN connection or AWS Direct Connect. A full list of the services available as VPC endpoints can be found here .</p>
 <p>VPC Endpoints are virtual devices. They are horizontally scaled, redundant and highly available VPC components. See the AWS Documentation  for more info.</p>
 <p>In a multi-VPC environment, such as this workshop, we have a choice at the time of defining where these VPC Endpoints will reside: in the local VPC that is accessing the AWS Service, or in a common, shared VPC. In some cases, you may decide to have some VPC Endpoints in a central VPC and some in the local VPCs. In this scenario we will add a KMS VPC endpoint within the DCS1 VPC, and the other VPCs will be able to use this central endpoint.</p>
-<p><img src="/images/kms-endpoint.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/kms-endpoint.png?featherlight=false&width=70pc"></p>
 
 
 
@@ -1590,19 +1590,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

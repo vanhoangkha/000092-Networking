@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>VPC Components Deep Dive :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -203,7 +203,7 @@
   
     
     <li data-nav-id="/3-vpcs/" title="VPC Components Deep Dive" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -985,7 +985,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1087,7 +1087,7 @@
 <ul>
 <li><strong>Datacenter</strong>: In the real world, this would be our existing Datacenter or co-location facility with all the hardware contained, but we are going to make our own version in the cloud!</li>
 </ul>
-<p><img src="/images/hybrid-vpcs-diagram.png?featherlight=false&amp;width=60pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/hybrid-vpcs-diagram.png?featherlight=false&width=60pc"></p>
 <h4 id="ip-addressing">IP Addressing</h4>
 <p>Carving up and assigning private IP address space (RFC 1918 addresses) is a big subject and can be daunting if you have a large enterprise, especially considering large business events with network impact, such as company mergers. Even when you have a centralized IP address management system (IPAM), you will find undocumented address space being used and sometimes finding usable ip space is difficult. However, as network professionals, we want to find large non-fragmented spaces so we can create a well-summarized network. Don&rsquo;t laugh: we got into this because we like challenges, right?</p>
 <ul>
@@ -1099,7 +1099,7 @@
 <ul>
 <li><strong>Datacenter VPC CIDR</strong>: 10.4.0.0/16 (10.4.0.0 to 10.4.255.255). which will be our Datacenter VPC.</li>
 </ul>
-<p><img src="/images/hybrid-subnets-diagram.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/hybrid-subnets-diagram.png?featherlight=false&width=70pc"></p>
 <ol>
 <li>
 <p>Go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#vpcs:">VPC</a></p>
@@ -1113,7 +1113,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>
 <p>Then go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#subnets:">Subnet</a>. We have partitioned each VPC into multiple subnets. For example, the Production VPC is partitioned into 6 subnets (3 subnets per Availability Zone). Each subnet has its own portion of the VPC CIDR range.</p>
@@ -1122,7 +1122,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0002.png?featherlight=false&width=90pc"></p>
 <p>Subnets are associated with Route Tables, which govern how traffic routes within the subnet. You will notice for example that both NP1-your_stack_name-Priv-A Subnet and NP1-your_stack_name-Priv-B Subnet share the same route table: NP1-your_stack_name-Private Route Table. And this route table has only a route for the local VPC CIDR block. This means that any instance present in this subnet will only have routing in that range. We will be changing that in the next lab, so that you can route outside of the NP1 VPC.</p>
 <ol start="3">
 <li>
@@ -1132,7 +1132,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0003.png?featherlight=false&width=90pc"></p>
 <p>As a last comment in this section, the &ldquo;Attachment&rdquo; subnets are intended to serve as the Transit Gateway attachment subnets. This is a Transit Gateway best practice as the Transit Gateway will position its own Elastic Network Interface in the subnet in order to communicate with any VPC resource. Creating dedicated subnets for Transit Gateway VPC attachments gives you total control about how to route traffic coming from the Transit Gateway into the VPC.</p>
 <ol start="4">
 <li>
@@ -1156,7 +1156,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>
 <p>Go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#acls:">Network ACLs</a>. NACLs restrict traffic coming in/out of your subnets and constitute the first layer of defense you can define within the VPC:</p>
@@ -1176,20 +1176,20 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#igws:">Internet Gateway</a>. An Internet gateway is a horizontally scaled, redundant, and highly available VPC component that allows communication between instances in your VPC and the Internet. It therefore imposes no availability risks or bandwidth constraints on your network traffic. Only 1 Internet gateway can be attached to a VPC at a given time. This virtual device is referenceable by the VPC routing tables. It acts as the edge device of your VPC.</li>
 </ol>
-<p><img src="/images/Lab-1/5/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0006.png?featherlight=false&width=90pc"></p>
 <p>Internet Gateways are used along with &ldquo;public subnets&rdquo; to route traffic outside of your VPC. A &ldquo;public subnet&rdquo; is just a regular subnet attached to a Routing table in which there is a route towards an Internet Gateway.</p>
 <ol start="7">
 <li>Go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#NatGateways:">NAT Gateway</a>. NAT Gateways are AWS managed devices that enable instances in a private subnet to connect to the Internet or other AWS services, but prevent the Internet from initiating a connection with those instances. There are 2 types of NAT Gateway connectivity: Public and Private. Public NAT Gateways are associated with public subnets, meaning that they also rely on Internet Gateways for their own Internet connectivity. Private NAT Gateways don&rsquo;t route traffic via Internet Gateways and are intended for connectivity towards other VPCs or on-premise networks. Please take a look at the official documentation  if you want to know more details about both NAT Gateway types. In this lab we will be using a Public NAT Gateway. This is the only NAT Gateway we have configured so far and it&rsquo;s actually the same device we have seen on the previous section. Notice that is currently associated with a public subnet:</li>
 </ol>
-<p><img src="/images/Lab-1/5/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Addresses:">Elastic IP addresses</a>. ENIs are widely used across many AWS resources, including EC2 instances. An ENI is a way to position a resource within a VPC, meaning reserving an IP for that resource to communicate within the VPC. As part of this deployment, CloudFormation has created several EC2 instances for us. Each of these EC2 instances will have one or more ENIs (depending on the size of the instance) within the subnet (VPC) they landed on. Navigate to the EC2 section of the console (browsing through Services -&gt; EC2 at the top left) and locate the DCS1 server. Put a check in the box next to the server. In the page underneath you can see the subnet the server has been deployed to. If you click on the Networking tab you will be able to see the network interface details:</li>
 </ol>
-<p><img src="/images/Lab-1/5/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0008.png?featherlight=false&width=90pc"></p>
 <h4 id="connect-linux-ec2-instance">Connect Linux EC2 instance</h4>
 <ol>
 <li>
@@ -1200,15 +1200,15 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/6/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>In the <strong>System Manager</strong> interface, select <strong>Session Manager</strong>. Session Manager allows to using IAM roles and policies to determine who has console access without having to manage SSH keys for our instances.</li>
 </ol>
-<p><img src="/images/Lab-1/6/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Select <strong>Start session</strong></li>
 </ol>
-<p><img src="/images/Lab-1/6/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>
 <p>In the <strong>Start session</strong> interface</p>
@@ -1218,17 +1218,17 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/6/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>In the interface <strong>NP1-tgw-Server</strong> session. Use the following command to check</li>
 </ol>
 <pre tabindex="0"><code>ifconfig
-</code></pre><p><img src="/images/Lab-1/6/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/6/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Use the <strong>cat</strong> command</li>
 </ol>
 <pre tabindex="0"><code>cat /etc/resolv.conf
-</code></pre><p><img src="/images/Lab-1/6/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/6/0006.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1739,19 +1739,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

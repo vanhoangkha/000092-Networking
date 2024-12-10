@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Thêm ECMP Path :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -344,7 +344,7 @@
   
     
     <li data-nav-id="/vi/4-transitgatewayandvpn/4.4-ecmppaths/" title="Thêm ECMP Path" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -1013,7 +1013,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1114,14 +1114,14 @@
 <p>Nếu không có ECMP, nếu có nhiều tuyến đường có chi phí ngang nhau đến cùng một đích, các thiết bị mạng sẽ chọn một trong các tuyến đường đó từ bảng định tuyến và thêm nó vào bảng chuyển tiếp của nó (Forwarding Information Base FIB), nó sẽ không sử dụng bất kỳ tuyến đường nào khác trừ khi có sự cố trong tuyến đường đã chọn.</p>
 <p>Cân bằng tải ECMP được thực hiện ở cấp phiên (session), không phải ở cấp gói (Packet) - thời điểm bắt đầu một phiên mới là khi thiết bị mạng (ECMP) chọn một đường dẫn chi phí ngang nhau để truyền tải gói tin.</p>
 <p>Khả năng mở rộng băng thông và Tính khả dụng cao được tích hợp sẵn trong <strong>Transit Gateway</strong> cũng như thông qua <strong>multiple Availability Zone (AZ) attachments</strong> cho các VPC của chúng ta. Tuy nhiên; để kết nối trở lại Trung tâm dữ liệu của chúng ta, chúng ta có một số điều cần xem xét. Trên thực tế, chúng ta sẽ tạo một  Customer Gateway khác trên một thiết bị vật lý hoàn toàn tách biệt. Lý tưởng nhất, về mặt vật lý, điều này được cách ly về mặt vật lý với Customer Gateway đầu tiên mà chúng ta có thể tạo ra nó (hãy nghĩ, xuyên phòng hoặc thậm chí trong một phòng liên lạc khác với kết nối và nguồn điện riêng biệt nếu chúng ta có). Nhưng để phân phối tải trên cả hai Customer Gateway trong trung tâm dữ liệu, bạn thường sử dụng một cấp bộ định tuyến khác (được hiển thị bên dưới làm bộ định tuyến lõi) để cân bằng lưu lượng. Đối với mục đích demo của chúng ta, hãy xây dựng nó trên cùng một CSR của Cisco mà chúng ta có trong Trung tâm dữ liệu mô phỏng của mình để chúng ta có thể thấy nhiều ECMP hơn trong hoạt động.</p>
-<p><img src="/images/vpn-ecmp.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/vpn-ecmp.png?featherlight=false&width=70pc"></p>
 <ol>
 <li>Truy cập vào <strong>Transit Gateway attachment</strong></li>
 </ol>
 <ul>
 <li>Chúng ta sẽ tạo 1 <strong>VPN-ECMP</strong> transit gateway attachment.</li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Thực hiện cấu hình</li>
 </ol>
@@ -1131,7 +1131,7 @@
 <li>Đối với <strong>Customer Gateway (CGW)</strong>, chọn <strong>Existing</strong></li>
 <li>Đối với <strong>Routing options</strong>, cài <strong>Dynamic(requires BGP)</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Thực hiện cấu hình các <strong>Tunnel</strong></li>
 </ol>
@@ -1142,15 +1142,15 @@
 <li><strong>Pre-Shared Key for Tunnel 2</strong> sử dụng <strong>awsamazon</strong></li>
 <li>Chọn <strong>Create transit gateway attachment</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Đợi khoảng 7 phút sau, hoàn thành tạo <strong>VPN-ECMP</strong> transit gateway attachment.</li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Kiểm tra <strong>VPN-ECMP connection</strong></li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Thực hiện truy cập vào <strong>Transit gateway route tables</strong></li>
 </ol>
@@ -1159,18 +1159,18 @@
 <li>Chọn <strong>Associations</strong></li>
 <li>Chọn <strong>Create association</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0006.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Trong giao diện <strong>Create association</strong></li>
 </ol>
 <ul>
 <li>Chọn <strong>Create association</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Hoàn thành tạo <strong>association</strong></li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0008.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Chọn <strong>Green Route Table</strong></li>
 </ol>
@@ -1178,18 +1178,18 @@
 <li>Chọn <strong>Propagations</strong></li>
 <li>Chọn <strong>Create propagation</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/0009.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/0009.png?featherlight=false&width=90pc"></p>
 <ol start="10">
 <li>Trong giao diện <strong>Propagation</strong></li>
 </ol>
 <ul>
 <li>Chọn <strong>Create propagation</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/00010.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00010.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>Hoàn thành tạo <strong>Propagation</strong>. Thực hiện lại bước tạo <strong>Progapation</strong> đối với <strong>Red Route Table và Blue Route Tables.</strong></li>
 </ol>
-<p><img src="/images/Lab-1/10-ECMP/00011.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00011.png?featherlight=false&width=90pc"></p>
 <ol start="12">
 <li>Truy cập vào <strong>VPN connections</strong></li>
 </ol>
@@ -1199,12 +1199,12 @@
 <li>Sử dụng <strong>Outside IP addresses</strong> để bước tiếp theo cấu hình.</li>
 <li>Hiện tại chưa cấu hình nên trạng thái <strong>Down</strong></li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/00012.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00012.png?featherlight=false&width=90pc"></p>
 <ol start="13">
 <li>Truy nhập vào giao diện <strong>AWS Cloud9</strong>, thực hiện cấu hình bằng cách chạy lệnh tạo file <strong>my2ndcsrconfig.txt</strong></li>
 </ol>
 <pre tabindex="0"><code>./create2ndcsr.sh publicip1 publicip2 my2ndcsrconfig.txt
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00013.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00013.png?featherlight=false&width=90pc"></p>
 <ol start="14">
 <li>Thực hiện kết nối SSH từ <strong>Output</strong> của <strong>CloudFormation</strong></li>
 </ol>
@@ -1215,27 +1215,27 @@
 </code></pre><ul>
 <li>Sau đó, sao chép nội dung  file <strong>my2ndcsrconfig.txt</strong> và cấu hình.</li>
 </ul>
-<p><img src="/images/Lab-1/10-ECMP/00014.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00014.png?featherlight=false&width=90pc"></p>
 <ol start="15">
 <li>Chúng ta kiểm tra sẽ thấy có thêm <strong>Tunnel3 và Tunnel4</strong></li>
 </ol>
 <pre tabindex="0"><code>sh ip int br
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00015.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00015.png?featherlight=false&width=90pc"></p>
 <ol start="16">
 <li>Hãy đảm bảo rằng chúng tôi đang nhìn thấy các tuyến đường trên Cisco CSR. đầu tiên chúng ta có thể xem BGP đang thấy gì: <strong>show ip bgp summary</strong>. Điều quan trọng nhất cần xem là State / PfxRcd (Các tiền tố đã nhận). Nếu điều này ở trạng thái Hoạt động hoặc Không hoạt động (có thể là một neighbor statement sai: địa chỉ IP, số AS) thì có vấn đề về cấu hình. Những gì chúng ta muốn thấy là một con số. Trên thực tế, nếu mọi thứ được thiết lập chính xác, chúng ta sẽ thấy 4 cho mỗi neighbor:</li>
 </ol>
 <pre tabindex="0"><code>sh ip bgp summ
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00016.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00016.png?featherlight=false&width=90pc"></p>
 <ol start="17">
 <li>Để xác minh thiết lập <strong>Equal Cost Multipathing (ECMP)</strong> sử dụng lệnh <strong>sh ip ro</strong>. Các tunnel đều up.</li>
 </ol>
 <pre tabindex="0"><code>sh ip ro
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00017.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00017.png?featherlight=false&width=90pc"></p>
 <ol start="18">
 <li>Ngoài ra, bạn có thể sử dụng show ip route bgp như chúng ta đã làm trước đây để chỉ xem các đường BGP).</li>
 </ol>
 <pre tabindex="0"><code>show ip route bgp
-</code></pre><p><img src="/images/Lab-1/10-ECMP/00018.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/10-ECMP/00018.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1766,19 +1766,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

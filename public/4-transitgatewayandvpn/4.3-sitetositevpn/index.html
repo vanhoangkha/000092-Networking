@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Site-to-site VPN setup :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -316,7 +316,7 @@
   
     
     <li data-nav-id="/4-transitgatewayandvpn/4.3-sitetositevpn/" title="Site-to-site VPN setup" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -985,7 +985,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1087,7 +1087,7 @@
 <ol>
 <li>Access the interface <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Home:">VPC</a></li>
 </ol>
-<p><img src="/images/Lab-1/9/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>
 <p>In the <strong>VPC</strong> interface</p>
@@ -1097,7 +1097,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/9/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>
 <p>Perform configuration</p>
@@ -1111,7 +1111,7 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/9/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Configure the <strong>Tunnel</strong>
 <ul>
@@ -1122,11 +1122,11 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/9/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Wait about 7 minutes, finish creating <strong>Transit gateway attachments</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Go to <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#TransitGatewayRouteTables:">Transit gateway route tables</a></li>
 </ol>
@@ -1134,16 +1134,16 @@
 <li>Select <strong>Associations</strong></li>
 <li>Select <strong>Create association</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0006.png?featherlight=false&width=90pc"></p>
 <p><strong>Associations</strong> mean that traffic coming from the outside towards the Transit gateway will use this route table. A routing lookup will take place in the TGW at this stage and the packet will be forwarded based on the information available within the “Routes” tab. Note: An attachment can only be Associated with one route table but a route table can have multiple associations.</p>
 <ol start="7">
 <li>In the <strong>Create association</strong> interface, select <strong>Create association</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Completed <strong>Association</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0008.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Also in the <strong>Transit gateway route table</strong> interface</li>
 </ol>
@@ -1152,7 +1152,7 @@
 <li>Select <strong>Propagations</strong></li>
 <li>Select <strong>Create propagations</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/0009.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/0009.png?featherlight=false&width=90pc"></p>
 <p>These are the attachments that propagate its prefixes into the route table (take it as an import into the route table). An attachment can propagate to multiple route tables. For this lab we want the datacenter addressing (the one reachable via the VPN connections) propagated to all of the route tables so the VPCs associated with each route table can route back to the datacenter.</p>
 <ol start="10">
 <li>In the <strong>Create propagation</strong> interface</li>
@@ -1160,15 +1160,15 @@
 <ul>
 <li>Select <strong>Create propagation</strong></li>
 </ul>
-<p><img src="/images/Lab-1/9/00010.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00010.png?featherlight=false&width=90pc"></p>
 <ol start="11">
 <li>Complete creation of <strong>propagation</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/00011.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00011.png?featherlight=false&width=90pc"></p>
 <ol start="12">
 <li>Do the same <strong>Propagation</strong> creation for <strong>Red Route Table and Blue Route Table.</strong></li>
 </ol>
-<p><img src="/images/Lab-1/9/00012.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00012.png?featherlight=false&width=90pc"></p>
 <p>Take a look at each of the route tables and notice the tab Routes. You can see the routes that are propagated, as well as a static route table that was created for you by the CloudFormation template. That&rsquo;s the default route (0.0.0.0/0) that will direct traffic destined for the Internet to the Datacenter Services VPC and ultimately through the NAT Gateway in that VPC. Note: there is also a route table with no name. This is the default route table. In this lab we do not intend to use it.</p>
 <ol start="13">
 <li>Return to <strong>AWS Cloud9</strong> interface. Now it&rsquo;s time to get the other end ready and apply the configuration to the Cisco router so we can bring the VPN tunnels up. We will carry out this action generating the Cisco configuration file. In order to do that, go back to the Cloud9 browser tab. Using the two VPN public tunnel endpoints ips generated from the step above, cd to tgwwalk on the Cloud9 bash console and run the bash script appending the 2 ips and the name of the configuration file:</li>
@@ -1177,7 +1177,7 @@
 <li>We configure <strong>VPN</strong> to create a configuration file with the following command:</li>
 </ul>
 <pre tabindex="0"><code>./createcsr.sh publicip1 publicip2 mycsrconfig.txt
-</code></pre><p><img src="/images/Lab-1/9/00013.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00013.png?featherlight=false&width=90pc"></p>
 <ol start="14">
 <li>
 <p>We access <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#VpnConnections:">Site-to-Site VPN Connections</a></p>
@@ -1189,18 +1189,18 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/9/00014.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00014.png?featherlight=false&width=90pc"></p>
 <p>Note: The file &lsquo;myscrconfig.txt&rsquo; is created to capture the output of the &lsquo;createcsr.sh&rsquo; script and does not already exist in the repository. Make sure you put the ip address that lines up with Inside IP CIDR address 169.254.10.0/30 for ip1. This will result in a Cisco configuration file ready to be used</p>
 <ol start="15">
 <li>Go back to the <strong>Cloud9</strong> interface, replace the Public IP address and run the command to create the file <strong>mycsrconfig.txt</strong></li>
 </ol>
 <pre tabindex="0"><code>./createcsr.sh publicip1 publicip2 mycsrconfig.txt
-</code></pre><p><img src="/images/Lab-1/9/00015.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00015.png?featherlight=false&width=90pc"></p>
 <p>Note: AWS generates starter templates to assist with the configuration for you on-premise router. For your real world deployments, you can get a starter template from the console for various device vendors (Cisco, Juniper, Palo Alto, F5, Checkpoint, etc). You can get those configurations via the &ldquo;Download configuration&rdquo; button within the Site-to-Site VPN Connections section explored before</p>
 <ol start="16">
 <li>We open the file <strong>mycsrconfig.txt</strong> to see the content of the VPN configuration.</li>
 </ol>
-<p><img src="/images/Lab-1/9/00016.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00016.png?featherlight=false&width=90pc"></p>
 <ol start="17">
 <li>Use command to start configuration</li>
 </ol>
@@ -1208,21 +1208,21 @@
 </code></pre><ul>
 <li>Then copy all the commands in the file <strong>mycsrconfig.txt</strong> and paste them into the configuration.</li>
 </ul>
-<p><img src="/images/Lab-1/9/00017.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00017.png?featherlight=false&width=90pc"></p>
 <ol start="18">
 <li>After configuration, enter <strong>exit</strong> to exit.</li>
 </ol>
-<p><img src="/images/Lab-1/9/00018.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00018.png?featherlight=false&width=90pc"></p>
 <ol start="19">
 <li>To check the configuration successfully, execute the command</li>
 </ol>
 <pre tabindex="0"><code>sh ip int br
-</code></pre><p><img src="/images/Lab-1/9/00019.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00019.png?featherlight=false&width=90pc"></p>
 <ol start="20">
 <li>Lets make sure we are seeing the routes on the Cisco CSR. first we can look at what BGP is seeing: show ip bgp summary. The most important thing to see is the State/PfxRcd (Prefixes received). If this is in Active or Idle (likely a neighbor statement is wrong: IP address, AS number) there is a configuration issue. What we want to see is a number. In fact if everything is setup correctly we should see 4 for each neighbor:</li>
 </ol>
 <pre tabindex="0"><code>show ip bgp summary
-</code></pre><p><img src="/images/Lab-1/9/00020.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00020.png?featherlight=false&width=90pc"></p>
 <ol start="21">
 <li>Notice that there is only one next-hop address for each of the VPCs CIDRs, despite having 2 tunnels in place. This is the result of not using ECMP by default. We can fix this by allowing ECMP in the Cisco CSR router. Back in config mode we will set maximum-paths to 8 in our BGP router. Just drop these commands:</li>
 </ol>
@@ -1230,16 +1230,16 @@
 address-family ipv4
 maximum-paths 8
 end
-</code></pre><p><img src="/images/Lab-1/9/00021.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00021.png?featherlight=false&width=90pc"></p>
 <ol start="22">
 <li>Execute the command <strong>sh ip route bgp</strong> again. Just to verify where those routes are coming from, we can take a look at the Green Route Table. Note: keep in mind that it&rsquo;s under the VPC service and Transit Gateway Route Tables at the bottom of the left menu. There should be 5 routes listed.</li>
 </ol>
 <pre tabindex="0"><code>sh ip route bgp
-</code></pre><p><img src="/images/Lab-1/9/00022.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/9/00022.png?featherlight=false&width=90pc"></p>
 <ol start="23">
 <li>As you might have guessed, route 10.4.0.0/16 is the VPC CIDR for the VPC DataCenter on which Cisco CSR operates. Cisco CSR is advertising this route to the Transit Gateway. You can actually test that by checking the router configuration with <strong>sh run</strong> and scrolling down to the BGP section:</li>
 </ol>
-<p><img src="/images/Lab-1/9/00023.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/9/00023.png?featherlight=false&width=90pc"></p>
 <ol start="24">
 <li>Access to <strong>VPN Connections</strong></li>
 </ol>
@@ -1248,7 +1248,7 @@ end
 <li>Select <strong>Tunnel details</strong></li>
 <li>Two tunnels have changed state <strong>UP</strong></li>
 </ul>
-<p><img src="/images/Lab-1/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/0001.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1763,19 +1763,19 @@ end
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

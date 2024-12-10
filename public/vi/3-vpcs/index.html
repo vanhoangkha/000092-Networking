@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>VPC Components Deep Dive :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -203,7 +203,7 @@
   
     
     <li data-nav-id="/vi/3-vpcs/" title="VPC Components Deep Dive" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -1013,7 +1013,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1112,7 +1112,7 @@
 Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tại chỗ (môi trường công ty) của chúng ta, một Trung tâm dữ liệu mô phỏng:</li>
 <li><strong>Datacenter:</strong> Trên thực tế, đây sẽ là Trung tâm dữ liệu hoặc cơ sở cùng vị trí hiện có của chúng ta với tất cả phần cứng có sẵn, nhưng chúng ta sẽ tạo phiên bản của riêng mình trên Cloud!</li>
 </ul>
-<p><img src="/images/hybrid-vpcs-diagram.png?featherlight=false&amp;width=60pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/hybrid-vpcs-diagram.png?featherlight=false&width=60pc"></p>
 <h5 id="ip-addressing">IP Addressing</h5>
 <p>Khắc phục và gán không gian địa chỉ IP riêng (địa chỉ RFC 1918) là một chủ đề lớn và có thể gây khó khăn nếu bạn có một doanh nghiệp lớn, đặc biệt là xem xét các sự kiện kinh doanh lớn có ảnh hưởng đến mạng, chẳng hạn như sáp nhập công ty. Ngay cả khi bạn có một hệ thống quản lý địa chỉ IP tập trung (IPAM), bạn sẽ thấy không gian địa chỉ không có giấy tờ đang được sử dụng và đôi khi việc tìm kiếm không gian ip có thể sử dụng là rất khó.</p>
 <ul>
@@ -1121,7 +1121,7 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
 <li><strong>Shared Services CIDR: 10.0.0.0/16</strong> (10.0.0.0 đến 10.0.255.255).</li>
 <li><strong>Datacenter VPC CIDR: 10.4.0.0/16</strong> (10.4.0.0 đến 10.4.255.255).</li>
 </ul>
-<p><img src="/images/hybrid-subnets-diagram.png?featherlight=false&amp;width=70pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/hybrid-subnets-diagram.png?featherlight=false&width=70pc"></p>
 <ol>
 <li>
 <p>Truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#vpcs:">VPC</a></p>
@@ -1130,7 +1130,7 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>
 <p>Sau đó, truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#subnets:">Subnet</a></p>
@@ -1139,7 +1139,7 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>
 <p>Truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#RouteTables:">Route table</a></p>
@@ -1148,27 +1148,27 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/5/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>Truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#SecurityGroups:">Security Group</a> xem các security group đã tạo.</li>
 </ol>
-<p><img src="/images/Lab-1/5/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#acls:">Network ACLs</a></li>
 </ol>
-<p><img src="/images/Lab-1/5/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Truy cập <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#igws:">Internet Gateway</a></li>
 </ol>
-<p><img src="/images/Lab-1/5/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0006.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Truy cập <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#NatGateways:">NAT Gateway</a></li>
 </ol>
-<p><img src="/images/Lab-1/5/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Truy cập vào <a href="https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#Addresses:">Elastic IP addresses</a></li>
 </ol>
-<p><img src="/images/Lab-1/5/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/5/0008.png?featherlight=false&width=90pc"></p>
 <h4 id="kết-nối-linux-ec2-instance">Kết nối Linux EC2 instance</h4>
 <ol>
 <li>
@@ -1179,15 +1179,15 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/6/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Trong giao diện <strong>System Manager</strong>, chọn <strong>Session Manager</strong></li>
 </ol>
-<p><img src="/images/Lab-1/6/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Chọn <strong>Start session</strong></li>
 </ol>
-<p><img src="/images/Lab-1/6/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>
 <p>Trong giao diện <strong>Start session</strong></p>
@@ -1197,17 +1197,17 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/6/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/6/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Trong giao diện <strong>NP1-tgw-Server</strong> session. Sử dụng lệnh sau để kiểm tra</li>
 </ol>
 <pre tabindex="0"><code>ifconfig
-</code></pre><p><img src="/images/Lab-1/6/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/6/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Sử dụng lệnh <strong>cat</strong></li>
 </ol>
 <pre tabindex="0"><code>cat /etc/resolv.conf
-</code></pre><p><img src="/images/Lab-1/6/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/6/0006.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -1734,19 +1734,19 @@ Ngoài ra, chúng ta cần một VPC để đại diện cho môi trường tạ
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

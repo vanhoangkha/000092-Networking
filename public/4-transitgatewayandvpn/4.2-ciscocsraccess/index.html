@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Access Cisco CSR Router with Cloud9 :: AWS Networking and Content Delivery</title>
 
     
-    <link href="/css/nucleus.css?1701092237" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1701092237" rel="stylesheet">
-    <link href="/css/hybrid.css?1701092237" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1701092237" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1701092237" rel="stylesheet">
-    <link href="/css/auto-complete.css?1701092237" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1701092237" rel="stylesheet">
-    <link href="/css/theme.css?1701092237" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1701092237" rel="stylesheet">
+    <link href="/css/nucleus.css?1733818925" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733818925" rel="stylesheet">
+    <link href="/css/hybrid.css?1733818925" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733818925" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733818925" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733818925" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733818925" rel="stylesheet">
+    <link href="/css/theme.css?1733818925" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733818925" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1701092237" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733818925" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1701092237"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733818925"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1701092237"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1701092237"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733818925"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733818925"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1701092237"></script>
+<script type="text/javascript" src="/js/search.js?1733818925"></script>
 
     
   </div>
@@ -288,7 +288,7 @@
   
     
     <li data-nav-id="/4-transitgatewayandvpn/4.2-ciscocsraccess/" title="Access Cisco CSR Router with Cloud9" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -985,7 +985,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>27-11-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -1092,11 +1092,11 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/8/0001.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/8/0001.png?featherlight=false&width=90pc"></p>
 <ol start="2">
 <li>Then the <strong>AWS Cloud9</strong> interface appears.</li>
 </ol>
-<p><img src="/images/Lab-1/8/0002.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/8/0002.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>
 <p>In the <strong>Cloud9</strong> interface.</p>
@@ -1106,36 +1106,36 @@
 </ul>
 </li>
 </ol>
-<p><img src="/images/Lab-1/8/0003.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/8/0003.png?featherlight=false&width=90pc"></p>
 <ol start="4">
 <li>We will select the <strong>Key Pair</strong> file created in the preparation step.</li>
 </ol>
-<p><img src="/images/Lab-1/8/0004.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/8/0004.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Move the key to the <strong>.ssh</strong> folder.</li>
 </ol>
 <pre tabindex="0"><code>mv _key_name_.pem ~/.ssh/
-</code></pre><p><img src="/images/Lab-1/8/0005.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/8/0005.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Grant access to the key file.</li>
 </ol>
 <pre tabindex="0"><code>chmod 400 ~/.ssh/_key_name_.pem
-</code></pre><p><img src="/images/Lab-1/8/0006.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/8/0006.png?featherlight=false&width=90pc"></p>
 <ol start="7">
 <li>Review <strong>Output</strong> of <strong>Stack CloudFormation</strong></li>
 </ol>
-<p><img src="/images/Lab-1/8/0007.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/8/0007.png?featherlight=false&width=90pc"></p>
 <ol start="8">
 <li>Use command from <strong>Output</strong> CloudFormation, then type <strong>yes</strong></li>
 </ol>
-<p><img src="/images/Lab-1/8/0008.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+<p><img alt="VPC Deployment" src="/images/Lab-1/8/0008.png?featherlight=false&width=90pc"></p>
 <ol start="9">
 <li>Execute the following test commands:</li>
 </ol>
 <pre tabindex="0"><code>show ip interface brief
 </code></pre><pre tabindex="0"><code>sh ip int br
 </code></pre><pre tabindex="0"><code>sh ip route
-</code></pre><p><img src="/images/Lab-1/8/0009.png?featherlight=false&amp;width=90pc" alt="VPC Deployment"></p>
+</code></pre><p><img alt="VPC Deployment" src="/images/Lab-1/8/0009.png?featherlight=false&width=90pc"></p>
 <p>Lets now look at the router Interfaces by typing at the #prompt: show ip interface brief or sh ip int br for short. You will see the GigabitEthernet1. The interface ip is mapped to the physical ip of the instance.</p>
 <p>Take a look at the route table on the CSR by typing at the #prompt: sh ip route. You will see S* 0.0.0.0/0 which is a static default route pointing to the 10.4.0.1 address. This is the local VPC router within the DataCenter VPC.</p>
 <p>As mentioned before, the EC2 instance holds an Elastic IP address, which will be used as the tunnel destination ip once we setup the VPN between the datacenter and the Transit Gateway. The public Elastic IP is a one-to-one mapping to the private 10.4.x.x IP address you just SSHed to.</p>
@@ -1653,19 +1653,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.min.js?1701092237"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1701092237"></script>
-    <script src="/js/jquery.sticky.js?1701092237"></script>
-    <script src="/js/featherlight.min.js?1701092237"></script>
-    <script src="/js/highlight.pack.js?1701092237"></script>
+    <script src="/js/clipboard.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733818925"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733818925"></script>
+    <script src="/js/jquery.sticky.js?1733818925"></script>
+    <script src="/js/featherlight.min.js?1733818925"></script>
+    <script src="/js/highlight.pack.js?1733818925"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1701092237"></script>
-    <script src="/js/learn.js?1701092237"></script>
-    <script src="/js/hugo-learn.js?1701092237"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733818925"></script>
+    <script src="/js/learn.js?1733818925"></script>
+    <script src="/js/hugo-learn.js?1733818925"></script>
 
-    <link href="/mermaid/mermaid.css?1701092237" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1701092237"></script>
+    <link href="/mermaid/mermaid.css?1733818925" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733818925"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
